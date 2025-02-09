@@ -1,0 +1,76 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#container.center {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#explorer {
+    width: 11.2%;
+    background-color: #2e2e2e;
+    padding: 0;
+    /* Remover padding para garantir alinhamento */
+    overflow-y: auto;
+}
+
+#explorer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5em;
+    /* Ajuste para corresponder à altura da linha do editor */
+}
+
+#explorer li {
+    padding: 0 10px;
+    /* Ajuste de padding para o espaçamento correto */
+    cursor: pointer;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 14px;
+    /* Ajustar para corresponder ao Monaco Editor */
+    line-height: 1.5;
+    /* Ajustar para corresponder ao Monaco Editor */
+    height: 1.5em;
+    /* Ajustar para corresponder ao Monaco Editor */
+    display: flex;
+    align-items: center;
+    /* Centralizar verticalmente */
+}
+
+#explorer li:hover {
+    background-color: #3e3e3e;
+}
+
+#editor {
+    height: 100vh;
+    width: 88.8%;
+}

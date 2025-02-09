@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Notepad</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="container" class="center">
+        <input type="text" id="noteName" placeholder="Enter note name" />
+        <button id="createNote">Create Note</button>
+    </div>
+    <script>
+        document.getElementById('createNote').addEventListener('click', () => {
+            const noteName = document.getElementById('noteName').value;
+            if (noteName) {
+                window.location.href = `/${noteName}`;
+            }
+        });
+    </script>
+</body>
+
+</html>

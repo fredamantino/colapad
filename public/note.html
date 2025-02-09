@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Notepad</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="explorer">
+            <ul id="file-list">
+                <!-- Lista de arquivos será populada aqui -->
+            </ul>
+        </div>
+        <div id="editor"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.31.1/min/vs/loader.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
